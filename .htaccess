@@ -1,0 +1,51 @@
+
+RewriteEngine On
+
+RewriteRule gio-hang-cua-ban.html index.php?controller=cart&action=index
+
+RewriteRule trang-chu.html index.php?controller=home&action=index
+
+RewriteRule trnha-store.html index.php?controller=home&action=introduce
+
+RewriteRule danh-muc-san-pham.html index.php?controller=category&action=index
+
+RewriteRule danh-sach-san-pham.html index.php?controller=product&action=index
+
+RewriteRule tat-ca-san-pham.html index.php?controller=product&action=show_product
+
+RewriteRule vest.html index.php?controller=product&action=show_category_product
+
+RewriteRule quan.html index.php?controller=product&action=show_category_product1
+
+RewriteRule blazer.html index.php?controller=product&action=show_category_product2
+
+RewriteRule that-lung.html index.php?controller=product&action=show_category_product3
+
+RewriteRule giay.html index.php?controller=product&action=show_category_product4
+
+RewriteRule so-mi.html index.php?controller=product&action=show_category_product5
+
+RewriteRule san-pham-duoi-2-trieu.html index.php?controller=product&action=show_product_1
+
+RewriteRule san-pham-tu-2-4-trieu.html index.php?controller=product&action=show_product_2
+
+RewriteRule san-pham-tren-4-trieu.html index.php?controller=product&action=show_product_3
+
+RewriteRule xoa-san-pham/([0-9]+).html index.php?controller=cart&action=delete&id=$1
+
+RewriteRule san-pham/(.*)/([0-9]{1,}).html index.php?controller=product&action=show_detail&id=$2
+
+RewriteRule tin-tuc/(.*)/([0-9]{1,}).html index.php?controller=new&action=show_detail&id=$2
+
+RewriteRule tin-tuc.html index.php?controller=new&action=show_all
+
+RewriteRule thanh-toan-don-hang.html index.php?controller=payment&action=index
+
+RewriteRule thanh-toan-online.html index.php?controller=payment&action=online
+
+RewriteRule thank-you.html index.php?controller=payment&action=thank
+
+RewriteRule dang-nhap.html index.php?controller=login&action=login
+
+RewriteRule dang-ky.html index.php?controller=login&action=register
+
